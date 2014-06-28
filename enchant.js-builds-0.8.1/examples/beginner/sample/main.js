@@ -1,4 +1,5 @@
 enchant();
+enchant.ENV.SOUND_ENABLED_ON_MOBILE_SAFARI = false;
 window.onload = function() {
     var game = new Game(320, 320);
     game.enemy_speed = 1;
