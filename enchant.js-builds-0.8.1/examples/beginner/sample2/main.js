@@ -10,7 +10,7 @@ window.onload = function() {
 
     game.rootScene.backgroundColor = "black";
     
-    game.preload('exsozai.png');
+    game.preload('exsozai.png','se8.wav');
 
     var CutEffect = enchant.Class.create(enchant.Sprite, {
         initialize: function(startX, startY, endX, endY) {
@@ -59,6 +59,9 @@ window.onload = function() {
             //this.backgroundColor='green';
 
             this.addEventListener('enterframe', function() {
+                enchant.ENV.SOUND_ENABLED_ON_MOBILE_SAFARI = true;
+                var sound = game.assets['se8.wav'].clone();
+                sound.play();
                 this.frame = [0,1,2,3,4,5][this.age];
 
                 if (this.age === 6) {
