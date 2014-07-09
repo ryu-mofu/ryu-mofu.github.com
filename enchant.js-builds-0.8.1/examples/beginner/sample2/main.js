@@ -1,5 +1,5 @@
 enchant();
-enchant.ENV.SOUND_ENABLED_ON_MOBILE_SAFARI = false;
+//enchant.ENV.SOUND_ENABLED_ON_MOBILE_SAFARI = false;
 window.onload = function() {
     var touchX = null;
     var touchY = null;
